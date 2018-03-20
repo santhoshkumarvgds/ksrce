@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>ksrce cse Login</title>
+<head>
+    <script language="javascript">
+function func(form) {
+    if (form.id.value=="root")
+    { 
+        if (form.pass.value=="root")
+        {              
+            location="santhosh kumar.html" 
+            }
+        else {
+            alert("Invalid Password")
+        }
+} 
+    else if (form.id.value=="san")
+    { 
+        if (form.pass.value=="san")
+        {              
+            location="santhosh kumar.html" 
+            }
+        else {
+            alert("Invalid Password")
+        }
+    }
+    else {  alert("Invalid UserID")
+}
+}
+</script>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+          
+        }
+        .s{
+            width:500px;
+            padding:15px;
+            border:2px solid blueviolet;
+            text-align: center;
+           margin: 35%;
+            border-radius: 40px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        h1{
+            color:blueviolet;
+        }
+        h3{
+            color:blueviolet;
+        }
+        .d{
+            color:blueviolet;
+            border:2px solid blueviolet;
+            background-color: white;
+            padding:9px;
+            border-radius: 6px;
+             
+        }
+        .d:hover{
+            color: white;
+            background-color: blueviolet;
+        }
+        .sa{
+         
+        }
+        input[type=text],input[type=password]{
+            border: 2px solid  blueviolet;
+            border-radius: 4px;
+            color:red;
+            padding-left: 4px;
+        }
+    </style>
+<body>
+<div class="s">
+    <form>
+<h1>ksrce || cse</h1>
+    <h3>Username</h3>
+<input name="id" type="text">
+    <h3>Password</h3>
+<input name="pass" type="password"><br><br>
+        <div class="sa">
+    <input type="button" value="Login" class="d" onClick="func(this.form)">
+<input type="Reset" class="d"><br><br>
+        </div>
+        </form>
+    </div>
+    </body>
+</html>
