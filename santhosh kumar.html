@@ -3,223 +3,132 @@
 <head>
     <meta http-equiv="Refresh" content="5;url=app.html"></head>
         <script>
-   function getRandom (size)
-{
-  return Math.floor(Math.random() * size);
-}
+  var mainCtr = $("#main-ctr"),
+    hello = $(".hello"),
+    eyeLeft = $("#eye-left"),
+    eyeRight = $("#eye-right"),
+    eyeToLeft = $("#eye-to-left"),
+    eyeToRight = $("#eye-to-right"),
+    wink = $("#wink"),
+    smileUp = $("#smile-up"),
+    smileDown = $("#smile-down"),
+    smile = $("#smile");
 
-//Creating the layers for the stars
-for (i = 2; i < 12; i++)
-{
-  $("#stars").append('<div class="star_layer" style="transform: translateZ(' + i + 'px) scale(' + (15 - i)/(15) +');"></div>')
-}
+var tl = new TimelineMax({
+  repeat: -1,
+  repeatDelay: .3,
+  delay: .3
+});
 
-//Creating the stars
-for (i = 0; i < 70; i++)
-{
-  $(".star_layer").eq(getRandom(10)).append('<div class="star"></div>');
-}
+TweenMax.set([mainCtr, hello], {
+  opacity: 0
+});
 
-updateStars();
+tl
+  .to(mainCtr, .3, {
+    opacity: 1
+  })
+  .to(smileDown, .3, {
+    morphSVG: "#smile-up"
+  })
+  .to(smile, .3, {
+    rotation: -30,
+    transformOrigin: "center center",
+    ease: Circ.ease
+  })
+  .to(smile, .9, {
+    rotation: 900,
+    transformOrigin: "center center",
+    ease: Circ.easeInOut
+  })
+  .to(eyeLeft, .3, {
+    morphSVG: "#eye-to-left",
+    ease: Power2.ease
+  }, "-=.3")
+  .to(eyeRight, .3, {
+    morphSVG: "#eye-to-right",
+    ease: Power2.ease
+  }, "-=.3")
+  .to(eyeRight, .1, {
+    scaleY: .25,
+    transformOrigin: "center center"
+  })
+  .to(eyeRight, .1, {
+    scaleY: 1
+  })
+  .to(hello, .3, {
+    opacity: 1
+  }, "-=.3")
+  .to(mainCtr, .6, {
+    delay: 1,
+    opacity: 0
+  })
 
-//Change stars every cycle
-setInterval(updateStars, 4000);
-
-//Randomising stars. Position and opacity is changed every cycle.
-function updateStars ()
-{
-  $(".star").each(function() {
-    $(this).css({"top": getRandom(200) + "px", "left": getRandom(200) + "px", "opacity": (20 + getRandom(50))/100});
-  });
-}
+// copy
+balapaCop("Windows Hello Animation", "rgba(255,255,255,.8)");
     </script>
     <style>
- *
-{
-  margin: 0;
-  padding: 0;
-}
+@import "bourbon";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
-/*Replace by a container if needed*/
-body
-{
-  height: 100vh;
+html,
+body {
+  display: table;
   width: 100%;
-  background-color: #DDD;
-  position: absolute;
+  height: 100%;
+  background: black;
 }
 
-#circle_container
-{
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  /*Centering*/
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  
-  border-radius: 50%;
-  background-color: #DDD;
-  overflow: hidden;
-  animation: background 4s -3.5s infinite;
-  /*Nice modern drop-shadow*/
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+.hello {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: "roboto";
+  font-weight: 300;
 }
 
-#load_wrapper
-{
-  height: 300%;
-  width: 300%;
-  margin-left: -50px;
-  transform: translate3d(-25%, 0, 0);
-  position: relative;
-  animation: rotation 4s linear infinite;
-}
-
-#sun, #moon
-{
-  position: absolute;
-  border-radius: 50%;
-  /*Make sure they are in the middle*/
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#sun
-{
-  width: 80px;
-  height: 80px;
-  background-color: #FFD475;
-  top: 40px;
-  box-shadow: 0 0 15px #FFCB57;
-}
-
-#moon
-{
-  width: 50px;
-  height: 50px;
-  background-color: #EEE;
-  top: 450px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.2) inset, 0 0 10px white;
-}
-
-#stars
-{
-  /*Has to be more than the amount of layers*/
-  perspective: 15px;
-	
-  width: 100%;
-  animation: stars 4s linear infinite;
-  opacity: 0.8;
-}
-
-.star
-{
-  width: 4px;
-  height: 4px;
-  background-color: white;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.star_layer
-{
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  /*This is to make sure the upper-Z layer's don't shift downward*/
-  transform-origin: 100px 0;
-}
-
-#loading_text
-{
+#main-ctr {
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  position: absolute;
-  top: calc(50% - 135px);
-  transform: translateY(-50%);
-  width: 100%;
-  line-height: 1;
-  color: #555;
-  font-size: 40px;
 }
 
-@keyframes rotation
-{
-  0% {
-    transform: translate3d(-25%, 0, 0) rotate(0deg);
-  }
-  20% {
-    /*Sun goes down*/
-    transform: translate3d(-25%, 0, 0) rotate(50deg);
-  }
-  30% {
-    /*Moon rises*/
-    transform: translate3d(-25%, 0, 0) rotate(130deg);
-  }
-  70% {
-    /*Moon goes down*/
-    transform: translate3d(-25%, 0, 0) rotate(240deg);
-  }
-  80% {
-    /*Sun rises*/
-    transform: translate3d(-25%, 0, 0) rotate(310deg);
-  }
-  100% {
-    transform: translate3d(-25%, 0, 0) rotate(360deg);
-  }
+.content {
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
 }
 
-@keyframes background
-{
-  0% {
-    background-color: #2896C3;
-  }
-  50% {
-    /*Night*/
-    background-color: #1E5267;
-  }
-  100% {
-    background-color: #2896C3;
-  }
-}
-
-@keyframes stars
-{
-  0% {
-    /*Invisible, not moving*/
-    opacity: 0;
-    padding-right: 0;
-  }
-  25% {
-    /*Start of movement*/
-    opacity: 0;
-    padding-right: 0;
-  }
-  50% {
-    /*Visible*/
-    opacity: 1;
-    padding-right: 25px;
-  }
-  75% {
-    opacity: 0;
-    padding-right: 50px;
-  }
-  100% {
-    opacity: 0;
-    padding-right: 0;
+svg {
+    
+  @include transform(scale(.5));
+  
+  #smile-up,
+  #circle,
+  #eye-to-left,
+  #eye-to-right,
+  #wink,
+  #bg {
+    visibility: hidden;
   }
 }
     </style>
 <body>
-   <div id="circle_container">
-  <div id="stars"></div>
-  <div id="load_wrapper">
-    <div id="sun"></div>
-    <div id="moon"></div>
-  </div>
+  <div id="main-ctr">
+  <svg xmlns="http://www.w3.org/2000/svg" width="294" height="241" viewBox="0 0 294 241">
+    <g id="group" fill="none" fill-rule="evenodd">
+      <g id="smile">
+        <path id="smile-up" stroke="#FFF" stroke-width="30" d="M238.797 75.04C222.935 40.772 188.243 17 148 17c-39.62 0-73.857 23.04-90.046 56.453" stroke-linecap="round"/>
+        <path id="smile-down" stroke="#FFF" stroke-width="30" d="M238.843 166c-15.863 34.268-50.554 58.04-90.797 58.04-39.62 0-73.857-23.04-90.046-56.453" stroke-linecap="round"/>
+        <path id="bg" fill="#FFF" d="M43 2h211v237H43z" opacity=".1"/>
+      </g>
+      <path id="eye-left" fill="#FFF" d="M148 173c29.27 0 53-23.73 53-53s-23.73-53-53-53c-4.956 0-9.753.68-14.303 1.952C111.374 75.194 95 95.685 95 120c0 29.27 23.73 53 53 53z"/>
+      <path id="eye-right" fill="#FFF" d="M148 173c29.27 0 53-23.73 53-53s-23.73-53-53-53c-4.016 0-7.927.447-11.687 1.293C112.665 73.615 95 94.745 95 120c0 29.27 23.73 53 53 53z"/>
+      <path id="eye-to-left" fill="#FFF" d="M106 143c12.15 0 22-9.85 22-22s-9.85-22-22-22c-2.028 0-3.992.274-5.857.788C90.836 102.352 84 110.878 84 121c0 12.15 9.85 22 22 22z"/>
+      <path id="eye-to-right" fill="#FFF" d="M187 143c12.15 0 22-9.85 22-22s-9.85-22-22-22c-3.286 0-6.404.72-9.204 2.012C170.242 104.496 165 112.136 165 121c0 12.15 9.85 22 22 22z"/>
+    </g>
+  </svg>
+  <h1 class="hello">Santhosh</h1>
 </div>
-<h1 id="loading_text">Loading</h1>
     </body>
 </html>
