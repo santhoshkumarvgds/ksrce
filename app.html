@@ -18,6 +18,48 @@
             padding: 0px
             font-family:Serif;
         }
+        .sidenav a{
+            
+            text-decoration: none;
+            font-size: 25px;
+            float: right;
+            margin-right: 15px;
+        }
+        .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+
+    transition: 0.3s;
+}
+        .sss{
+            margin-top: 40px;
+            text-align: center;
+        }
+        .sss img{
+            height: 100px;
+            border-radius: 50px;
+            border: 3px solid blueviolet;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .sss h4{
+            color: blueviolet;
+            text-shadow:1px 1.5px 1.5px #000000;
+        }
+        .sss hr{
+            width: 85%;
+            margin: 6%;
+            border-bottom: 1.5px solid blueviolet;
+        }
         h1{
             text-align:center;
             margin: 0px;
@@ -28,7 +70,12 @@
         }
       
  
-            .poo{position:relative;animation:animatetop 1s;}@keyframes animatetop
+            .poo{
+                position:relative;
+                animation:animatetop 1s;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        @keyframes animatetop
         {
             from{
                 top:-300px;opacity:0
@@ -78,6 +125,8 @@
             background-color: blueviolet;
             color: white;
             text-align: center;
+            box-shadow: 0px 0px 20px rgba(0,0,0,.8);
+            
         }
     
         iframe{
@@ -86,13 +135,25 @@
         
     </style>
 <body>
+        <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sss">
+            <img src="7.jpeg" ><br>
+                <h4>SANTHOSH</h4>
+                <hr>
+            </div>
+</div>
+
+
+
        <div class="poo">
-    <h1>Ksrce || cse</h1>
+            <h1><span style="font-size:30px;cursor:pointer;color:white;margin-left: -170px;margin-right: 10px;" onclick="openNav()">&#9776; </span>Ksrce || cse</h1>
         </div>
-    <iframe src="home.html" name="san" height="100%" width="100%"></iframe>
+    <iframe src="home.html" name="san" height="87%" width="100%"></iframe>
     <div class="header"> 
-        <a href="home.html" target="san">
+        <a href="main.html">
         <div class="col-lg-3"> 
+            
                 <i class="fa fa-home"  ></i>
                 <p >Home</p>
             
@@ -125,4 +186,14 @@
            
         </div>
     </body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "190px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
 </html>
