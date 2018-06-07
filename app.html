@@ -2,7 +2,7 @@
 <head>
     <title>Santhosh kumar</title><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
+      
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -19,7 +19,7 @@
             padding: 0px
             font-family:Serif;
         }
-        .sidenav a{
+        #mySidenav a m{
             
             text-decoration: none;
             font-size: 25px;
@@ -61,6 +61,23 @@
             margin: 6%;
             border-bottom: 1.5px solid blueviolet;
         }
+        .sss a{
+            text-decoration: none;
+        }
+        .sss a p:hover{
+            color: blueviolet;
+            background-color: white;
+        }
+        .sss a p{
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            border: 2px solid blueviolet;
+            background-color: blueviolet;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
         h1{
             text-align:center;
             margin: 0px;
@@ -137,11 +154,17 @@
     </style>
 <body>
         <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><m>&times;</m></a>
             <div class="sss">
             <img src="7.jpeg" ><br>
                 <h4>SANTHOSH</h4>
                 <hr>
+                <div class="silde">
+                    <a  href="demo.html" target="san"><p>Time table</p></a>
+                    <a href="demo.html" target="san"><p>Exam schadule</p></a>
+                    <a href="demo.html" target="san"><p>Staff information</p></a>
+                    <a href="demo.html" target="san"><p>About</p></a>
+                </div>
             </div>
 </div>
 
@@ -195,6 +218,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
 </script>
 
 </html>
