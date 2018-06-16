@@ -1,0 +1,142 @@
+S.No	Faculty Name	Qualification	Designation	Years of Experience	Photos
+1	Dr. A. Rajiv Kannan	Ph.D.	                     Prof. /Head                                  13.6	
+
+
+
+
+2	Dr.T.Poongothai	Ph.D.	                          Prof	                                     16.4	
+
+
+
+
+ 3	Dr. A. Viswanathan	Ph.D.		       ASP			 10.6	
+
+
+
+
+4 	 Dr. N.S. Nithya 	 Ph.D.		      ASP 			14.4	
+
+
+
+5 	Dr. E. Baby Anitha	Ph.D.		    ASP 	9.10 	
+
+
+
+
+ 6	  Mr. G. Sivaselvan 	 M.E., (Ph.D.) 	ASP 	26.7 	
+
+
+
+7	Mrs. V. Sharmila	M.E., (Ph.D.)	ASP	14	
+
+
+
+8	 Mr. C. Anand 	Ph.D.,	ASP	13.5	
+
+
+9	 Dr. M. Prakash 	 Ph.D.,	 ASP	9.8	
+
+
+
+10	 Dr. V. Vennila	 Ph.D.,	ASP	9.6	
+ 
+
+
+
+11	Ms.M.Umamaheshwari	M.E., [Ph.D].,	AP	10	
+
+
+
+ 
+12	Mr.K.Muthukumaran	M.E	AP	9.3	
+
+
+
+13	Mr. K. Kumaresan 	 M.E., (Ph.D.) 	 AP	8.4	
+
+
+
+ 14	  Mr. G. Nagarajan 	  M.E., (Ph.D.) 	  AP	8.5 	
+
+
+15	Mr.S.Sivaprakash	 M.E., (Ph.D.) 	AP	7.4	
+
+
+16	Mr. J.Santhosh 	 M.E., (Ph.D.)	 AP	74	
+ 
+
+
+17	 Mrs. M.Manopriya	M.E. 	AP	5	
+
+
+
+19	Mrs. G.S. Rizwana Banu 	 M.E.	AP	7.4 	
+
+
+
+20	 Mr. A.M. Viswa Bharathy	M.E., (Ph.D.) 	AP	5.5	
+
+
+21	Mrs. S. Suganya  	M.E. 	AP	 6	
+ 
+
+
+
+22	 Mr. P. Prakash 	 M.E., (Ph.D.) 	AP 	8.4	
+ 
+
+
+
+23	 Mrs. M.K. Nivodhini 	M.E. 	AP	4.6	
+ 
+
+
+24	Mrs. M.Priyadharsini 	M.E.  	AP 	2	
+ 
+
+
+
+25	 Mrs. S.Thenmozhi	 M.E.	AP 	4.6	
+
+
+
+26	Ms. K. Nithya  	 M.E.	AP	2	
+
+
+27	Mrs. P. Vasuki 	 M.E.	AP	4	
+ 
+
+
+28	 Mr. K. Dineshkumar	M.E 	AP	 5	
+
+
+
+29	Ms. D. Sandhiya	M.E	AP	2	
+
+
+
+30	Mr. M.Sudharsan	M.E	AP	4	
+
+
+
+
+31	Mr. T. Saran Sujai	M.E	AP	2	
+ 
+
+
+
+32	Mr.G.karthik	M.E., (Ph.D.)	AP	4	
+
+
+
+33	Mr.S.Vadivel	M.E., (Ph.D.)	AP	4	
+ 
+
+
+
+34	Mr.T.Sathishkumar	M.E.	AP	2	
+
+
+ 
+
+ 35	Mr. K. Venkatesh Guru	M.Tech., (Ph.D.)	AP	6 	
