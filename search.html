@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+
+<!-- jQuery library -->
+<script src="jq.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+    li i{
+        color: red;
+    }
+    body{
+        margin-bottom: 100px;
+        font-family: Comic Sans MS;
+    }
+</style>
+</head>
+<body>
+
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+        <li><a href="profile.html"><i class="fa fa-heartbeat"></i> Santhosh <i class="fa fa-heartbeat"></i></a></li>
+        <li><a href="Naveen/profile.html">Naveen</a></li>
+        <li><a href="naveenprabu/profile.html">Naveenprabu</a></li>
+        <li><a href="Nirmala/profile.html">Nirmala</a></li>
+        <li><a href="Poomani/profile.html">Poomani</a></li>
+        <li><a href="Poonguzhali/profile.html">Poonguzhali</a></li>
+        <li><a href="Prabhakaran/profile.html">Prabhakaran</a></li>
+        <li><a href="Prakash/profile.html">Prakash</a></li>
+        <li><a href="Praveenkumar/profile.html">Praveenkumar</a></li>
+        <li><a href="Priyalaxmi/profile.html">Priya laxmi</a></li>
+        <li><a href="Priyadharshini.C/profile.html">Priyadharshini.C</a></li>
+        <li><a href="Priyadharshini.K/profile.html">Priyadharshini.K</a></li>
+        <li><a href="Priyadharshini.J/profile.html">Priyadharshini.J</a></li>
+        <li><a href="Priyanka/profile.html">Priyanka</a></li>
+        <li><a href="Raghuwaran/profile.html">Raghuwaran</a></li>
+        <li><a href="Raghul/profile.html">Raghul</a></li>
+        <li><a href="Renuga/profile.html">Renuga</a></li>
+        <li><a href="Sakthivel/profile.html">Sakthivel</a></li>
+        <li><a href="Sanjay/profile.html">Sanjay</a></li>
+        <li><a href="Sangavi/profile.html">Sangavi</a></li>
+        <li><a href="Sanjeev/profile.html">Sanjeev</a></li>
+        <li><a href="Sanjeevinath/profile.html">Sanjeevinath</a></li>
+        <li><a href="Sathish/profile.html">Sathish</a></li>
+        <li><a href="Sathiyapriya/profile.html">Sathiya priya</a></li>
+        <li><a href="Sathya/profile.html">Sathya</a></li>
+        <li><a href="Sivavignesh/profile.html">Siva vignesh</a></li>
+        <li><a href="Srivani/profile.html">Srivani</a></li>
+        <li><a href="Subbulakshmi/profile.html">Subbu lakshmi</a></li>
+        <li><a href="Subitha/profile.html">Subitha</a></li>
+        <li><a href="Sujitha/profile.html">Sujitha</a></li>
+        <li><a href="Sujitha.S/profile.html">Sujitha.S</a></li>
+        <li><a href="Sureshkumar/profile.html">Suresh kumar</a></li>
+        <li><a href="Tamizhalagan/profile.html">Tamizhalagan</a></li>
+        <li><a href="Thaaranya/profile.html">Thaaranya</a></li>
+        <li><a href="Thahatasliem/profile.html">Thaha tasliem</a></li>
+        <li><a href="ThambiDinakaran/profile.html">Thambhi Dinakaran</a></li>
+        <li><a href="Udhaya/profile.html">Udhaya</a></li>
+        <li><a href="Vetrivel/profile.html">Vetrivel</a></li>
+        <li><a href="Vignesh/profile.html">Vignesh</a></li>
+        <li><a href="Vimalkkkumar/profile.html">Vimalkkkumar</a></li>
+        <li><a href="Vishnudevi/profile.html">Vishnu devi</a></li>
+        <li><a href="Yukesh/profile.html">Yukesh</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+</html>

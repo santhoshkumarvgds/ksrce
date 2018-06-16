@@ -1,0 +1,202 @@
+<html>
+    <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        
+  <script>
+  $(function() {
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+      videoSRC = $(this).attr("data-video"),
+      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+      $(theModal + ' iframe').attr('src', videoSRCauto);
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+      });
+    });
+  });
+  </script>
+</head>
+    <style>
+                *{
+            margin: 0px;
+            font-family:Serif;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            font-size: 16px;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        .sn{
+            padding-bottom: 20%;
+        } 
+        h2{
+            font-size: 15px;
+            text-align: center;
+        }
+        #videoModal{
+            
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+
+<body>
+     <div class="alert alert-danger fade in">
+         <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+         <a href="demo.html" target="san">
+         Today Update....!
+         </a>
+    </div>
+    <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/pvd2ePxwvgk" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2> Basic Addition In C++ Programming Tamil</h2>
+        </div>
+           <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/BtqGgY8WpG0" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Area & Circumference In C++ Program</h2>
+        </div> 
+   <!---- <div class="sn">
+        <a class=" video"  data-video="" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2></h2>
+        </div> ---->
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/_ufSZ0Biu0A" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Complex Format In C++ Programming Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/J9ekuFpBfBw
+ " data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>switch case in c++ in tamil </h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/iCov0ravNE0" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2> Factorial in c++ in tamil </h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/h8fJduBUbVU" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>fibonacci series in tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/ZJo9V2V6co8" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Number Triangle Pattern in C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/Gk5BuL5ff3Y" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>odd or Even in c++ in tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/7Yy99PzsCRc" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Basic C++ class in Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/W3We13TPPKc   
+" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>matrix addition in c++ programming in tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/zDIEjOAIYz8 " data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Transpose of Matrix in c++ in tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/HC0gy8VwEGQ" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>palindrome in c++ in tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/-h8MhUO1gGM " data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Classes In C++ In Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/ePZmETq_QGo 
+" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Basic Class Program In C++ Tamil </h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/xNzuekMz6CE" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Use Array As Object In C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/vIkvPsOeHAs" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Object Declare Using Pointer In C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/2DZMNHA7410 " data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Asecending Using class in C++</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/I6XPA0P8kW4
+" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Return object and passing object as an argument In C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/63WBr8Q2HXI " data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Pass object as an arguement in function C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/vmqtpRJk57Y " data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Constructor In C++ Programming Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/Pi-zBc9nCrU 
+" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2> Types of Constructor In C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/K3roqQFshds
+
+" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Default Argument In Functon C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/0oBFmtT3QPI " data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Program Using Parameter Constructor In C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/V9VVaDX0nTg 
+" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Function Overloading in class C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/5FnbFINW1j4
+" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>nested member function in c++ in Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video=" https://www.youtube.com/embed/9s0HXnICt-o" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Friend Function In C++ Programming Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/cC1n9y2il14 " data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Class Declaration As Friend In C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/625uRTkaebY" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Read And Write Class Object In CPP Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/LMLdKYVYeJc" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Add Two Matrix Using Friend Function In C++ Tamil</h2>
+        </div>
+     <div class="sn">
+        <a class=" video"  data-video="https://www.youtube.com/embed/VlTZBU4Cq70" data-toggle="modal" data-target="#videoModal" controls autoplay><img src="download.jpg"  > </a><br><br>
+            <h2>Overload Divide Operator Then Find Reminder In C++ Tamil</h2>
+        </div>
+        
+   
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <iframe width="100%" height="82%" src="" frameborder="0" allowfullscreen style="vertical-align: middle"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+            </body>
+            </html>

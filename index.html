@@ -1,0 +1,115 @@
+<html>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap.css">
+
+<!-- jQuery library -->
+<script src="jq.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js.js"></script>
+    <title>ksrce cse Login</title>
+<head>
+    <script language="javascript">
+function func(form) {  
+    if (form.id.value=="San")
+    { 
+        if (form.pass.value=="san")
+        {              
+            location="loading.html" 
+            }
+        else {
+            alert("Invalid Password")
+        }
+    }
+   
+    else if (form.id.value=="naveen")
+    { 
+        if (form.pass.value=="san")
+        {              
+            location="C:/Users/Santhosh kumar/Music/ksrce/naveenprabu/loading.html" 
+            }
+        else {
+            alert("Invalid Password")
+        }
+    }
+     else {  alert("Invalid UserID")
+
+}
+}
+</script>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+          
+        }
+        .s{
+            width:80%;
+            padding:15px;
+            border:2px solid blueviolet;
+            text-align: center;
+            margin-left: 10%;
+            margin-top: 30%;
+            border-radius: 40px;
+            box-shadow: 10px 14px 118px 0 rgba(0, 0, 0, 0.2), 10px 16px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        h1{
+            color:blueviolet;
+            font-size:500%;
+        }
+        h3{
+            color:blueviolet;
+            font-size:400%;
+        }
+        h2{
+             color:blueviolet;
+        }
+        .d{
+            color:white;
+            border:2px solid white;
+            background-color:blueviolet ;
+            padding:9px;
+            font-size:300%;
+            border-radius: 6px;
+             
+        }
+        .d:hover{
+            color: blueviolet;
+            background-color: white;
+            border:2px solid blueviolet;
+             box-shadow: 10px 14px 118px 0 rgba(0, 0, 0, 0.2), 10px 16px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        .sa{
+         
+        }
+        input[type=text],input[type=password]{
+            border: 2px solid  blueviolet;
+            font-size:300%;
+            border-radius: 4px;
+            color:red;
+            padding-left: 4px;
+        }
+        input[type=text]:hover,input[type=password]:hover{
+            box-shadow: 10px 14px 118px 0 rgba(0, 0, 0, 0.2), 10px 16px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+<body>
+<div class="s">
+    <form>
+<h1>Ksrce || cse</h1><br>
+<img src="poo.jpg">
+        <h3>Username</h3><br>
+<input name="id" type="text"><br>
+    <h3>Password</h3><br>
+<input name="pass" type="password" ><br><br><br><br>
+        <div class="sa">
+    <input type="button" value="Login" class="d" onClick="func(this.form)">
+            <a href="sign.html"><input type="button" value="Sign up"  class="d"></a><br><br><br>
+        </div>
+        </form>
+    <h2>created by</h2>
+    <h2>santhosh kumar</h2>
+    </div>
+    </body>
+</html>
