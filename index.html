@@ -21,18 +21,7 @@ function func(form) {
             alert("Invalid Password")
         }
     }
-   
-    else if (form.id.value=="Sathya")
-    { 
-        if (form.pass.value=="s")
-        {              
-            location="Sathya/loading.html" 
-            }
-        else {
-            alert("Invalid Password")
-        }
-    }
-    
+  
      else if (form.id.value=="Poonguzhali")
     { 
         if (form.pass.value=="meenu")
@@ -43,15 +32,19 @@ function func(form) {
             alert("Invalid Password")
         }
     }
-    
-    
-    
-    
-    
-     else {  alert("Invalid UserID")
-
-}
-
+    else if (form.id.value=="Sathya")
+    { 
+        if (form.pass.value=="s")
+        {              
+            location="Poonguzhali/loading.html" 
+            }
+        else {
+            alert("Invalid Password")
+        }
+    }
+     else {  
+         alert("Invalid UserID")
+     }
 }
 </script>
     </head>
@@ -122,7 +115,7 @@ function func(form) {
 <input name="pass" type="password" ><br><br><br><br>
         <div class="sa">
     <input type="button" value="Login" class="d" onClick="func(this.form)">
-    <a href="sign.html"><input type="button" value="Sign up"  class="d"></a><br><br><br>
+            <a href="sign.html"><input type="button" value="Sign up"  class="d"></a><br><br><br>
         </div>
         </form>
     <h2>created by</h2>
